@@ -1,0 +1,32 @@
+.navBarContainer{
+    width: 100%;
+    height: 4rem;
+    padding: 0rem 0.5rem;
+    background-color: rgb(29, 53, 87);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBarContainer .navegacion{
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.navBarContainer .navegacion a{
+    height: 100%;
+    margin-left: 0.5rem;
+    padding: 0rem 1rem;
+    font-size: 1.1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navBarContainer .navegacion a:hover{
+    background-color: #132238;
+}
