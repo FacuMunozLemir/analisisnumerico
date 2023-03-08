@@ -1,0 +1,73 @@
+.sectionCrypto{
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.sectionCrypto .ejemploIzquierda{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionCrypto .ejemploIzquierda h3{
+    width: 80%;
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.sectionCrypto .ejemploIzquierda p{
+    margin-top: 2rem;
+    width: 80%;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 300;
+    line-height: 2.5rem;
+}
+
+.sectionCrypto .ejemploIzquierda a{
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    border: 0.1rem solid #294975;
+    background-color: #294975;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.sectionCrypto .ejemploIzquierda a:hover{
+    background-color: rgba(0, 0, 0, 0.75);
+    transition: .3s all ease;
+}
+
+.sectionCrypto .ejemploDerecha{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ejemploDerecha h3{
+    width: 80%;
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+}
+
+.ejemploDerecha p{
+    margin-top: 2rem;
+    color: white;
+    width: 80%;
+    font-size: 1.5rem;
+}
