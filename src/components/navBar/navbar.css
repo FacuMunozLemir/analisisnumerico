@@ -2,7 +2,7 @@
   width: 100%;
   height: 4rem;
   padding: 0rem 0.5rem;
-  background-color: rgb(29, 53, 87);
+  background-color: #1d3557;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,14 +50,83 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .navegacion {
+  .navBarContainer .navegacion {
+    position: absolute;
+    visibility: hidden;
+    margin-right: -100rem;
+  }
+
+  .navBarContainer .expandida {
+    width: 20rem;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0rem;
+    top: 4rem;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: aliceblue;
+    z-index: 5;
+  }
+
+  .navBarContainer .expandida a {
+    width: 100%;
+    height: 3.5rem;
+    color: #000;
+    font-size: 1.1rem;
+    margin-left: 0rem;
+    padding: 0rem 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .navBarContainer .expandida a:hover {
+    background-color: #1d3557;
+    color: white;
+  }
+
+  .navBarContainer .hamburguesa {
+    position: relative;
+    visibility: visible;
+    margin-top: 0rem;
+  }
+
+  .navBarContainer .hamburguesaCierre {
+    display: flex;
+    flex-direction: column;
+    width: 2rem;
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    visibility: visible;
+    margin-top: 0rem;
+  }
+
+  .navBarContainer .hamburguesaCierre .linea {
+    width: 100%;
+    height: 0.1rem;
+    background-color: white;
+  }
+
+  .navBarContainer .hamburguesaCierre .l1 {
+    transform: rotate(45deg);
+    position: absolute;
+    right: 0.5rem;
+    top: 1.2rem;
+  }
+  .navBarContainer .hamburguesaCierre .l2 {
     position: absolute;
     visibility: hidden;
     margin-top: -100rem;
   }
-  .hamburguesa {
-    position: relative;
-    visibility: visible;
-    margin-top: 0rem;
+  .navBarContainer .hamburguesaCierre .l3 {
+    transform: rotate(-45deg);
+    position: absolute;
+    right: 0.5rem;
+    top: 1.2rem;
   }
 }
