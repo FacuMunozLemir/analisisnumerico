@@ -7,7 +7,7 @@ function SectionCrypto() {
   return (
     <div className="sectionCrypto">
       <div className="ejemploIzquierda">
-        <h3>Pero con un ejemplo lo vamos a entender mejor.</h3>
+        <h3>Con un ejemplo lo vamos a entender mejor</h3>
         <p>
           Creo que todos escuchamos el termino "crypto monedas" ¿verdad? ¿Sabías
           que el valor de <b>1 Bitcoin</b> es de más de <b>20.000 dolares</b>?
@@ -24,11 +24,11 @@ function SectionCrypto() {
       <div className="ejemploDerecha">
         <h3>Ingresa un valor con decimales y mira la magia</h3>
         <img src="./img/bitcoin.png" alt="imagen bitcoin" />
+        <Calculadora />
         <p>
           Aquí podemos ver como un número decimal muy pequeño, puede hacer una
           GRAN diferencia dependiendo del <b>contexto</b>
         </p>
-        <Calculadora />
       </div>
     </div>
   );

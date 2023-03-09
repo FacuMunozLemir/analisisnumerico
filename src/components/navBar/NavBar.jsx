@@ -15,22 +15,47 @@ function NavBar() {
       setNav("1");
     }
   }
+
+  function handleClick() {
+    // let clase = document.querySelector("#navegacion").className;
+    // console.log(clase);
+    // if (clase == "expandida") {
+    //   document.querySelector(".hamburguesaCierre").className = "hamburguesa";
+    //   document.querySelector(".expandida").className = "navegacion";
+    // }
+  }
   return (
     <div className="navBarContainer">
       <div className="logo">
-        <p>LOGO</p>
+        <img
+          src="./img/logoProfesorAizama.png"
+          alt="logo del ingeniero Aizama"
+        />
       </div>
-      <div className="navegacion">
-        <Link to={"/"}>Inicio</Link>
-        <Link to={"/"}>Cátedra</Link>
-        <Link to={"/"}>Noticias</Link>
-        <Link to={"/"}>Enlaces de Interes</Link>
-        <Link to={"/"}>Eventos</Link>
-        <Link to={"/"}>Biblioteca</Link>
-        <Link to={"/"}>Contacto</Link>
-        <Link to={"/"}>Iniciar Sesión</Link>
+      <div id="navegacion" className="navegacion">
+        <Link to={"/"} onClick={handleClick}>
+          Inicio
+        </Link>
+        <Link to={"/"} onClick={handleClick}>
+          Noticias
+        </Link>
+        <Link to={"/"} onClick={handleClick}>
+          Enlaces de Interes
+        </Link>
+        <Link to={"/"} onClick={handleClick}>
+          Eventos
+        </Link>
+        <Link to={"/"} onClick={handleClick}>
+          Biblioteca
+        </Link>
+        <Link to={"/"} onClick={handleClick}>
+          Contacto
+        </Link>
+        <Link to={"/"} onClick={handleClick}>
+          Iniciar Sesión
+        </Link>
       </div>
-      <div className="hamburguesa" onClick={handlerNav}>
+      <div id="hamburguesa" className="hamburguesa" onClick={handlerNav}>
         <div className="linea l1"></div>
         <div className="linea l2"></div>
         <div className="linea l3"></div>

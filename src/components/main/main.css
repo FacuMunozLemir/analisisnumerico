@@ -10,6 +10,7 @@
   max-height: 400px;
   display: flex;
   position: relative;
+  /* margin-top: 4rem; */
 }
 
 .main .banner img {
@@ -50,6 +51,7 @@
 .main .semiHero h2 {
   font-size: 2rem;
   font-weight: 700;
+  text-align: center;
 }
 .main .semiHero .texto {
   width: 100%;
@@ -84,4 +86,33 @@
   margin-top: 2rem;
   font-size: 1.5rem;
   line-height: 2.4rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .main .semiHero .texto {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .semiHero .texto .textoIzquierda {
+    width: 50%;
+  }
+  .main .semiHero .texto .textoDerecha {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main .banner .letrasBanner h1 {
+    font-size: 1.5rem;
+  }
+
+  .main .semiHero h2 {
+    font-size: 1.5rem;
+  }
+
+  .main .semiHero .texto .textoDerecha h3 {
+    font-size: 1.3rem;
+  }
+  .main .semiHero .texto .textoDerecha p {
+    font-size: 1.1rem;
+  }
 }

@@ -6,6 +6,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
+  /* position: fixed;
+  z-index: 999; */
+}
+
+.navBarContainer .logo img {
+  width: 3rem;
 }
 
 .navBarContainer .navegacion {
@@ -53,7 +60,7 @@
   .navBarContainer .navegacion {
     position: absolute;
     visibility: hidden;
-    margin-right: -100rem;
+    margin-top: -100rem;
   }
 
   .navBarContainer .expandida {
@@ -68,6 +75,7 @@
     align-items: center;
     background-color: aliceblue;
     z-index: 5;
+    transition: 0.4s all ease;
   }
 
   .navBarContainer .expandida a {

@@ -74,4 +74,93 @@
   color: white;
   width: 80%;
   font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.ejemploDerecha .calculadoraContainer .primerLinea p {
+  width: 50%;
+}
+.ejemploDerecha .calculadoraContainer .primerLinea input {
+  width: 50%;
+}
+.ejemploDerecha .calculadoraContainer .segundaLinea p {
+  width: 50%;
+}
+.ejemploDerecha .calculadoraContainer .segundaLinea input {
+  width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  .sectionCrypto {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sectionCrypto .ejemploIzquierda {
+    width: 100%;
+  }
+  .sectionCrypto .ejemploIzquierda p {
+    width: 100%;
+  }
+
+  .sectionCrypto .ejemploDerecha {
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .sectionCrypto .ejemploDerecha h3 {
+    width: 100%;
+  }
+  .sectionCrypto .ejemploDerecha p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sectionCrypto .ejemploIzquierda h3 {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+  .sectionCrypto .ejemploIzquierda p {
+    font-size: 1.1rem;
+    width: 100%;
+  }
+  .sectionCrypto .ejemploIzquierda a {
+    font-size: 1.1rem;
+  }
+
+  .sectionCrypto .ejemploDerecha h3 {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+  .sectionCrypto .ejemploDerecha img {
+    width: 50%;
+  }
+  .sectionCrypto .ejemploDerecha p {
+    font-size: 1.1rem;
+    width: 100%;
+  }
+
+  .calculadoraContainer .primerLinea p {
+    width: 50%;
+    margin-top: 0;
+    font-size: 0.9rem;
+  }
+
+  .calculadoraContainer {
+    width: 100%;
+  }
+
+  .calculadoraContainer .primerLinea input {
+    width: 50%;
+    font-size: 1.1rem;
+  }
+  .calculadoraContainer .segundaLinea p {
+    width: 50%;
+    margin-top: 0;
+    font-size: 0.9rem;
+  }
+  .calculadoraContainer .segundaLinea input {
+    width: 50%;
+    font-size: 1.1rem;
+  }
 }
