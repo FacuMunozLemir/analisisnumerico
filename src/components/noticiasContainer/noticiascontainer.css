@@ -1,0 +1,34 @@
+.noticiasContainer {
+  width: 100%;
+  height: auto;
+  margin: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.noticiasContainer h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.noticiasContainer .primeraFila {
+  width: 90%;
+  max-width: 1500px;
+  margin-top: 3.5rem;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.noticiasContainer .segundaFila {
+  width: 100%;
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

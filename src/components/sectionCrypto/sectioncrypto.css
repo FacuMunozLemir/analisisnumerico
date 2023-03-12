@@ -10,6 +10,7 @@
 
 .sectionCrypto .ejemploIzquierda {
   width: 50%;
+  max-width: 750px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -51,6 +52,7 @@
 
 .sectionCrypto .ejemploDerecha {
   width: 50%;
+  max-width: 750px;
   height: 100%;
   display: flex;
   flex-direction: column;
