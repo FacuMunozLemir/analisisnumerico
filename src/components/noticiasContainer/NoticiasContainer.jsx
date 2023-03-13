@@ -16,13 +16,13 @@ function NoticiasContainer() {
   }, [data]);
 
   return (
-    <div className="noticiasContainer">
-      <h3>Noticias más recientes</h3>
+    <div id="noticias" className="noticiasContainer">
+      <h3>Noticias recientes</h3>
       <div className="primeraFila">
         <NoticiasList props={data} />
       </div>
       <div className="segundaFila">
-        <Link>Todas las noticias</Link>
+        <Link>Ver todas las noticias</Link>
       </div>
     </div>
   );

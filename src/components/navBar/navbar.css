@@ -1,140 +1,190 @@
-.navBarContainer {
+.navBar {
   width: 100%;
-  height: 4rem;
-  padding: 0rem 0.5rem;
-  background-color: #1d3557;
+  height: auto;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  justify-content: center;
   /* position: fixed;
-  z-index: 999; */
+  z-index: 9999; */
 }
 
-.navBarContainer .logo img {
-  width: 3rem;
-}
-
-.navBarContainer .navegacion {
-  width: auto;
-  height: 100%;
+.navBar .navSuperior {
+  width: 100%;
+  height: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #fff;
 }
-
-.navBarContainer .navegacion a {
-  height: 100%;
-  margin-left: 0.5rem;
-  padding: 0rem 1rem;
-  font-size: 1.1rem;
-  color: white;
+.navBar .navInferior {
+  width: 100%;
+  height: 6rem;
   display: flex;
   align-items: center;
-  text-decoration: none;
+  justify-content: space-between;
+  background-color: #1d3557;
+  padding: 1rem 0.5rem;
 }
 
-.navBarContainer .navegacion a:hover {
-  background-color: #132238;
+.navBar .navInferior .items {
+  height: auto;
+  z-index: 2;
 }
 
-.hamburguesa {
+.navBar .navInferior .items .burguer svg {
+  height: 2rem;
+  color: #fff;
+}
+
+.navBar .navInferior .items .itemsNav {
+  margin-top: 1.5rem;
+  width: 100%;
+  height: 100vh;
+  padding: 0rem 2rem;
   display: flex;
   flex-direction: column;
-  width: 2rem;
-  height: 60%;
-  align-items: center;
-  justify-content: space-evenly;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: white;
   position: absolute;
   visibility: hidden;
-  margin-top: -100rem;
+  margin-left: -100rem;
+  transition: 0.3s all ease;
 }
-
-.hamburguesa .linea {
+.navBar .navInferior .items .itemsNavExpandida {
+  margin-top: 1.5rem;
   width: 100%;
-  height: 0.1rem;
+  height: 100vh;
+  padding: 0rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
   background-color: white;
+  position: absolute;
+  left: 0rem;
+  transition: 0.3s all ease;
 }
 
-@media screen and (max-width: 1024px) {
-  .navBarContainer .navegacion {
-    position: absolute;
-    visibility: hidden;
-    margin-top: -100rem;
-  }
+.navBar .navInferior .items .itemsNavExpandida a {
+  width: 100%;
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000;
+  border-bottom: 0.05rem solid #000;
+}
+.navBar .navInferior .items .itemsNav a {
+  width: 100%;
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000;
+  border-bottom: 0.05rem solid #000;
+}
 
-  .navBarContainer .expandida {
-    width: 20rem;
-    height: 100vh;
-    position: absolute;
+.navBar .navInferior .logo img {
+  width: 5rem;
+}
+
+.navBar .navInferior .carrito a svg {
+  height: 2rem;
+  color: #fff;
+}
+
+@media screen and (min-width: 769px) {
+  .navBar .navInferior {
     display: flex;
     flex-direction: column;
-    right: 0rem;
-    top: 4rem;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: aliceblue;
-    z-index: 5;
-    transition: 0.4s all ease;
+    height: 8rem;
+    padding: 0rem 0.5rem;
+    justify-content: center;
   }
 
-  .navBarContainer .expandida a {
+  .navBar .navInferior .logo {
+    order: -1;
+  }
+
+  .navBar .navInferior .logo img {
+    width: 4rem;
+  }
+
+  .navBar .navInferior .burguer {
+    position: absolute;
+    margin-top: -100rem;
+    visibility: hidden;
+  }
+
+  .navBar .navInferior .items {
     width: 100%;
-    height: 3.5rem;
-    color: #000;
-    font-size: 1.1rem;
-    margin-left: 0rem;
-    padding: 0rem 1rem;
-    font-size: 1.1rem;
+    margin-top: 0.5rem;
     display: flex;
     align-items: center;
-    text-decoration: none;
+    justify-content: center;
   }
 
-  .navBarContainer .expandida a:hover {
-    background-color: #1d3557;
+  .navBar .navInferior .items .itemsNav {
+    margin: 0rem;
+    max-width: 80rem;
+    height: auto;
+    position: relative;
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background: none;
+    transition: none;
+  }
+  .navBar .navInferior .items .itemsNavExpandida {
+    margin: 0rem;
+    max-width: 80rem;
+    height: auto;
+    position: relative;
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background: none;
+    transition: none;
+  }
+
+  .navBar .navInferior .items .itemsNav a {
+    margin-top: 0rem;
+    width: auto;
+    border: none;
+    color: white;
+  }
+  .navBar .navInferior .items .itemsNavExpandida a {
+    margin-top: 0rem;
+    width: auto;
+    border: none;
     color: white;
   }
 
-  .navBarContainer .hamburguesa {
-    position: relative;
-    visibility: visible;
-    margin-top: 0rem;
+  .navBar .navInferior .items .itemsNav a:hover {
+    transform: scale(1.2);
+    transition: 0.3s all ease;
+  }
+  .navBar .navInferior .items .itemsNavExpandida a:hover {
+    transform: scale(1.2);
+    transition: 0.3s all ease;
   }
 
-  .navBarContainer .hamburguesaCierre {
-    display: flex;
-    flex-direction: column;
-    width: 2rem;
-    height: 60%;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    visibility: visible;
-    margin-top: 0rem;
+  .navBar .navInferior .carrito {
+    position: absolute;
+    right: 1rem;
+    top: 5rem;
   }
 
-  .navBarContainer .hamburguesaCierre .linea {
-    width: 100%;
-    height: 0.1rem;
-    background-color: white;
+  .navBar .navInferior .carrito a svg {
+    color: white;
   }
 
-  .navBarContainer .hamburguesaCierre .l1 {
-    transform: rotate(45deg);
-    position: absolute;
-    right: 0.5rem;
-    top: 1.2rem;
-  }
-  .navBarContainer .hamburguesaCierre .l2 {
-    position: absolute;
-    visibility: hidden;
-    margin-top: -100rem;
-  }
-  .navBarContainer .hamburguesaCierre .l3 {
-    transform: rotate(-45deg);
-    position: absolute;
-    right: 0.5rem;
-    top: 1.2rem;
+  .navBar .navInferior .carrito a svg:hover {
+    transform: scale(1.2);
+    transition: 0.3s all ease;
   }
 }

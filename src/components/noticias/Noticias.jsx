@@ -7,9 +7,11 @@ function Noticias(item) {
     <div className="noticiasCard">
       <h4>{item.titulo}</h4>
       <h5>{item.subtitulo}</h5>
-      <p>{item.fecha}</p>
-      <p>{item.cuerpo}</p>
-      <Link>Noticia completa</Link>
+      <p className="txtCuerpo">{item.cuerpo}</p>
+      <p className="txtFecha">{item.fecha}</p>
+      <div className="noticiasBtn">
+        <Link>Noticia completa</Link>
+      </div>
     </div>
   );
 }

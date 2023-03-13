@@ -1,0 +1,22 @@
+.sectionContacto {
+  width: 100%;
+  height: auto;
+  background-color: #eeee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionContacto h3 {
+  width: 85%;
+  max-width: 1500px;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}

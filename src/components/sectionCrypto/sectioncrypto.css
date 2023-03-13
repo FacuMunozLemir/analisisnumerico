@@ -39,14 +39,15 @@
   padding: 0.5rem 1rem;
   border: 0.1rem solid #294975;
   background-color: #294975;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   font-size: 1.5rem;
   color: white;
   text-decoration: none;
 }
 
 .sectionCrypto .ejemploIzquierda a:hover {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: white;
+  color: #294975;
   transition: 0.3s all ease;
 }
 

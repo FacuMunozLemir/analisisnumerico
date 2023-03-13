@@ -4,15 +4,26 @@ import NavBar from "./components/navBar/NavBar";
 import Main from "./components/main/Main.jsx";
 import SectionCrypto from "./components/sectionCrypto/SectionCrypto";
 import NoticiasContainer from "./components/noticiasContainer/NoticiasContainer";
+import EnlacesContainer from "./components/enlacesContainer/enlacesContainer";
+import SectionContacto from "./components/sectionContacto/SectionContacto";
 
 function App() {
   return (
     <BrowserRouter>
       <NavBar />
-      <Main />
-      <SectionCrypto />
-      <NoticiasContainer />
-      <Routes>{/* <Route path="/" element={<Main />} /> */}</Routes>
+
+      <Routes>
+        <Route
+          path="/"
+          element={[
+            <Main />,
+            <SectionCrypto />,
+            <NoticiasContainer />,
+            <EnlacesContainer />,
+            <SectionContacto />,
+          ]}
+        />
+      </Routes>
     </BrowserRouter>
   );
 }

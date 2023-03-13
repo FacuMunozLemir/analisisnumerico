@@ -48,7 +48,7 @@ const data = [
     fecha: "10 / 03 / 2023",
     subtitulo: "windows",
     cuerpo:
-      "Programa para computadoras con SO Windows principalmente pensado para llevar el control tus pacientes, con sus fichas medicas, fotos, y mucho más",
+      "Programa para computadoras con SO Windows principalmente pensado para llevar el control tus pacientes, con sus fichas medicas, fotos, y mucho másPrograma para computadoras con SO Windows principalmente pensado para llevar el control tus pacientes, con sus fichas medicas, fotos, y mucho más",
   },
   {
     id: 3,
@@ -73,6 +73,27 @@ const data = [
     subtitulo: "windows",
     cuerpo:
       "Programa para computadoras con SO Windows principalmente pensado para llevar el control tus pacientes, con sus fichas medicas, fotos, y mucho más",
+  },
+];
+
+const enlaces = [
+  {
+    id: 1,
+    texto: "Libros de la cátedra",
+    enlace: "https://www.crystal-desarrollo.com",
+    orden: 1,
+  },
+  {
+    id: 2,
+    texto: "Graficadora de funciones",
+    enlace: "https://es.symbolab.com/graphing-calculator",
+    orden: 2,
+  },
+  {
+    id: 3,
+    texto: "Calculadora de funciones",
+    enlace: "https://es.symbolab.com/solver/functions-calculator",
+    orden: 3,
   },
 ];
 
@@ -109,6 +130,24 @@ export function getSingleElement(idUnico) {
 
     setTimeout(() => {
       if (itemFind) resolve(itemFind);
+      else reject(new Error("item no encontrado"));
+    }, 500);
+  });
+}
+
+export async function getEnlaces() {
+  // let enlace = enlaces;
+  // enlace.sort(function (a, b) {
+  //   return b.orden - a.orden;
+  // });
+
+  return new Promise((resolve, reject) => {
+    let enlace = enlaces.sort(function (a, b) {
+      return b.orden - a.orden;
+    });
+
+    setTimeout(() => {
+      if (enlace) resolve(enlace);
       else reject(new Error("item no encontrado"));
     }, 500);
   });

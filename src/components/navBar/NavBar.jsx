@@ -1,64 +1,58 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { faBars, faUser } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./navbar.css";
-
 function NavBar() {
-  const [nav, setNav] = useState("1");
+  const burguer = <FontAwesomeIcon icon={faBars} />;
+  const usuario = <FontAwesomeIcon icon={faUser} />;
+  const [burguers, setBurguers] = useState("1");
   function handlerNav() {
-    if (nav === "1") {
-      document.querySelector(".hamburguesa").className = "hamburguesaCierre";
-      document.querySelector(".navegacion").className = "expandida";
-      setNav("2");
+    if (burguers === "1") {
+      document.querySelector("#burguer").className = "itemsNavExpandida";
+      setBurguers("2");
     } else {
-      document.querySelector(".hamburguesaCierre").className = "hamburguesa";
-      document.querySelector(".expandida").className = "navegacion";
-      setNav("1");
+      document.querySelector("#burguer").className = "itemsNav";
+      setBurguers("1");
     }
   }
-
-  function handleClick() {
-    // let clase = document.querySelector("#navegacion").className;
-    // console.log(clase);
-    // if (clase == "expandida") {
-    //   document.querySelector(".hamburguesaCierre").className = "hamburguesa";
-    //   document.querySelector(".expandida").className = "navegacion";
-    // }
-  }
   return (
-    <div className="navBarContainer">
-      <div className="logo">
-        <img
-          src="./img/logoProfesorAizama.png"
-          alt="logo del ingeniero Aizama"
-        />
+    <div className="navBar">
+      <div className="navSuperior">
+        <p>- Mejorando con ciencia -</p>
       </div>
-      <div id="navegacion" className="navegacion">
-        <Link to={"/"} onClick={handleClick}>
-          Inicio
-        </Link>
-        <Link to={"/"} onClick={handleClick}>
-          Noticias
-        </Link>
-        <Link to={"/"} onClick={handleClick}>
-          Enlaces de Interes
-        </Link>
-        <Link to={"/"} onClick={handleClick}>
-          Eventos
-        </Link>
-        <Link to={"/"} onClick={handleClick}>
-          Biblioteca
-        </Link>
-        <Link to={"/"} onClick={handleClick}>
-          Contacto
-        </Link>
-        <Link to={"/"} onClick={handleClick}>
-          Iniciar Sesión
-        </Link>
-      </div>
-      <div id="hamburguesa" className="hamburguesa" onClick={handlerNav}>
-        <div className="linea l1"></div>
-        <div className="linea l2"></div>
-        <div className="linea l3"></div>
+      <div className="navInferior">
+        <div className="items">
+          <div className="burguer" onClick={handlerNav}>
+            {burguer}
+          </div>
+          <div id="burguer" className="itemsNav">
+            <Link to={"/"} onClick={handlerNav}>
+              Inicio
+            </Link>
+            <a href="/#noticias" onClick={handlerNav}>
+              Noticias
+            </a>
+            <a href="/#enlaces" onClick={handlerNav}>
+              Enlaces
+            </a>
+            <Link to={"/eventos"} onClick={handlerNav}>
+              Eventos
+            </Link>
+            {/* <Link to={"/"} onClick={handlerNav}>
+              Biblioteca
+            </Link> */}
+            <a href="/#contacto" onClick={handlerNav}>
+              Contacto
+            </a>
+          </div>
+        </div>
+        <div className="logo">
+          <img src="./img/logoProfesorAizama.png" alt="logo amarre" />
+        </div>
+        <div className="carrito">
+          <Link>{usuario}</Link>
+        </div>
       </div>
     </div>
   );
