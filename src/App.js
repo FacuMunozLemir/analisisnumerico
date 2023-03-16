@@ -6,6 +6,7 @@ import SectionCrypto from "./components/sectionCrypto/SectionCrypto";
 import NoticiasContainer from "./components/noticiasContainer/NoticiasContainer";
 import EnlacesContainer from "./components/enlacesContainer/enlacesContainer";
 import SectionContacto from "./components/sectionContacto/SectionContacto";
+import EventosContainer from "./components/pageEventos/eventosContainer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <SectionContacto />,
           ]}
         />
+        <Route path="/eventos" element={<EventosContainer />} />
       </Routes>
     </BrowserRouter>
   );

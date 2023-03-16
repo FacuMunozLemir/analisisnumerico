@@ -95,6 +95,24 @@ const enlaces = [
     enlace: "https://es.symbolab.com/solver/functions-calculator",
     orden: 3,
   },
+  {
+    id: 4,
+    texto: "Calculadora de funciones",
+    enlace: "https://es.symbolab.com/solver/functions-calculator",
+    orden: 4,
+  },
+  {
+    id: 5,
+    texto: "Calculadora de funciones",
+    enlace: "https://es.symbolab.com/solver/functions-calculator",
+    orden: 5,
+  },
+  {
+    id: 6,
+    texto: "Calculadora de funciones",
+    enlace: "https://es.symbolab.com/solver/functions-calculator",
+    orden: 6,
+  },
 ];
 
 //Obtenemos todos los elementos
