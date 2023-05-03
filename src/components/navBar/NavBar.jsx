@@ -36,8 +36,8 @@ function NavBar() {
             <a href="/#enlaces" onClick={handlerNav}>
               Enlaces
             </a>
-            <Link to={"/eventos"} onClick={handlerNav}>
-              Eventos
+            <Link to={"/ejemplos"} onClick={handlerNav}>
+              Ejemplos
             </Link>
             {/* <Link to={"/"} onClick={handlerNav}>
               Biblioteca

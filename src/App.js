@@ -6,7 +6,11 @@ import SectionCrypto from "./components/sectionCrypto/SectionCrypto";
 import NoticiasContainer from "./components/noticiasContainer/NoticiasContainer";
 import EnlacesContainer from "./components/enlacesContainer/enlacesContainer";
 import SectionContacto from "./components/sectionContacto/SectionContacto";
-import EventosContainer from "./components/pageEventos/eventosContainer";
+
+// import EventosContainer from "./components/pageEventos/eventosContainer";
+import Ejemplos from "./components/ejemplos/Ejemplos";
+import Menu from "./components/comensal/comensal";
+import Truncamiento from "./views/truncamiento/Truncamiento";
 
 function App() {
   return (
@@ -24,7 +28,12 @@ function App() {
             <SectionContacto />,
           ]}
         />
-        <Route path="/eventos" element={<EventosContainer />} />
+        <Route path="/comensal" element={<Menu />} />
+        <Route path="/ejemplos" element={<Ejemplos />} />
+        <Route
+          path="/ejemplos/redondeotruncamiento"
+          element={<Truncamiento />}
+        />
       </Routes>
     </BrowserRouter>
   );

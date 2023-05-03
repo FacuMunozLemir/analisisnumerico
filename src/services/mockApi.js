@@ -85,26 +85,28 @@ const enlaces = [
   },
   {
     id: 2,
-    texto: "Graficadora de funciones",
-    enlace: "https://es.symbolab.com/graphing-calculator",
+    texto: "Configuración de Solver",
+    enlace:
+      "https://www.youtube.com/watch?v=ZN0upz1Wciw&ab_channel=ElT%C3%ADoTech",
     orden: 2,
   },
   {
     id: 3,
-    texto: "Calculadora de funciones",
-    enlace: "https://es.symbolab.com/solver/functions-calculator",
+    texto: "Uso de solver",
+    enlace:
+      "https://www.youtube.com/watch?v=dLw8ZrWT8pc&ab_channel=SergioAlejandroCampos-EXCELeINFO",
     orden: 3,
   },
   {
     id: 4,
-    texto: "Calculadora de funciones",
-    enlace: "https://es.symbolab.com/solver/functions-calculator",
+    texto: "Bibliografía",
+    enlace: "./documents/MetodosNumericosParaIngenieros-StevenC.Chapra.pdf",
     orden: 4,
   },
   {
     id: 5,
-    texto: "Calculadora de funciones",
-    enlace: "https://es.symbolab.com/solver/functions-calculator",
+    texto: "Graficadora de funciones",
+    enlace: "https://es.symbolab.com/graphing-calculator",
     orden: 5,
   },
   {
@@ -154,11 +156,6 @@ export function getSingleElement(idUnico) {
 }
 
 export async function getEnlaces() {
-  // let enlace = enlaces;
-  // enlace.sort(function (a, b) {
-  //   return b.orden - a.orden;
-  // });
-
   return new Promise((resolve, reject) => {
     let enlace = enlaces.sort(function (a, b) {
       return b.orden - a.orden;
