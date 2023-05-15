@@ -9,7 +9,6 @@ import SectionContacto from "./components/sectionContacto/SectionContacto";
 
 // import EventosContainer from "./components/pageEventos/eventosContainer";
 import Ejemplos from "./components/ejemplos/Ejemplos";
-import Menu from "./components/comensal/comensal";
 import Truncamiento from "./views/truncamiento/Truncamiento";
 
 function App() {
@@ -28,7 +27,6 @@ function App() {
             <SectionContacto />,
           ]}
         />
-        <Route path="/comensal" element={<Menu />} />
         <Route path="/ejemplos" element={<Ejemplos />} />
         <Route
           path="/ejemplos/redondeotruncamiento"

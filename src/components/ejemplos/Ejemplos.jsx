@@ -23,31 +23,31 @@ function Ejemplos() {
         <Link className="ejemplo2 ejemploCard">
           <img src="./img/ejemplo1redondeo.jpg" alt="imagen de ejemplo" />
           <div className="letrasEjemplo">
-            <h4>Truncamiento y Redondeo</h4>
+            <h4>Error Absoluto, relativo y porcentual</h4>
           </div>
         </Link>
         <Link className="ejemplo3 ejemploCard">
           <img src="./img/ejemplo1redondeo.jpg" alt="imagen de ejemplo" />
           <div className="letrasEjemplo">
-            <h4>Truncamiento y Redondeo</h4>
+            <h4>Raices reales</h4>
           </div>
         </Link>
         <Link className="ejemplo4 ejemploCard">
           <img src="./img/ejemplo1redondeo.jpg" alt="imagen de ejemplo" />
           <div className="letrasEjemplo">
-            <h4>Truncamiento y Redondeo</h4>
+            <h4>Sistemas de ecuaciones</h4>
           </div>
         </Link>
         <Link className="ejemplo5 ejemploCard">
           <img src="./img/ejemplo1redondeo.jpg" alt="imagen de ejemplo" />
           <div className="letrasEjemplo">
-            <h4>Truncamiento y Redondeo</h4>
+            <h4>Programacion lineal</h4>
           </div>
         </Link>
         <Link className="ejemplo6 ejemploCard">
           <img src="./img/ejemplo1redondeo.jpg" alt="imagen de ejemplo" />
           <div className="letrasEjemplo">
-            <h4>Truncamiento y Redondeo</h4>
+            <h4>Ajustes de Curva</h4>
           </div>
         </Link>
       </div>

@@ -11,15 +11,13 @@ function Main() {
         </div>
       </div>
       <div className="semiHero">
-        <h2>Bienvenidos a la catedra más interesante</h2>
+        <h2>Bienvenidos a la catedra</h2>
         <div className="texto">
           <div className="textoIzquierda">
             <img src="./img/calculadoraAmico.png" alt="" />
           </div>
           <div className="textoDerecha">
-            <h3>
-              Donde van a aprender a sacar todo el provecho de los números
-            </h3>
+            <h3>Donde conoceremos un poco más sobre los números</h3>
             <p>
               Es esencial que aprendamos la importancia que tienen los{" "}
               <b>números</b> sin importar la posición que ocupen. Todos nos
