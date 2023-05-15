@@ -10,6 +10,7 @@ import SectionContacto from "./components/sectionContacto/SectionContacto";
 // import EventosContainer from "./components/pageEventos/eventosContainer";
 import Ejemplos from "./components/ejemplos/Ejemplos";
 import Truncamiento from "./views/truncamiento/Truncamiento";
+import Errores from "./views/errores/Errores";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           path="/ejemplos/redondeotruncamiento"
           element={<Truncamiento />}
         />
+        <Route path="/ejemplos/errores" element={<Errores />} />
       </Routes>
     </BrowserRouter>
   );

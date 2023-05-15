@@ -100,7 +100,7 @@ const enlaces = [
   {
     id: 4,
     texto: "Bibliografía",
-    enlace: "./documents/MetodosNumericosParaIngenieros-StevenC.Chapra.pdf",
+    enlace: "./documents/MetodosNumericosParaIngenierosStevenCChapra.pdf",
     orden: 4,
   },
   {

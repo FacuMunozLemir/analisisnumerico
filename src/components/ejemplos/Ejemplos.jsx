@@ -20,7 +20,7 @@ function Ejemplos() {
             <h4>Truncamiento y Redondeo</h4>
           </div>
         </Link>
-        <Link className="ejemplo2 ejemploCard">
+        <Link className="ejemplo2 ejemploCard" to={"/ejemplos/errores"}>
           <img src="./img/ejemplo1redondeo.jpg" alt="imagen de ejemplo" />
           <div className="letrasEjemplo">
             <h4>Error Absoluto, relativo y porcentual</h4>
