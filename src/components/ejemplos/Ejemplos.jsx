@@ -26,7 +26,7 @@ function Ejemplos() {
             <h4>Error Absoluto, relativo y porcentual</h4>
           </div>
         </Link>
-        <Link className="ejemplo3 ejemploCard">
+        <Link className="ejemplo3 ejemploCard" to={"/ejemplos/raicesreales"}>
           <img src="./img/ejemplo1redondeo.jpg" alt="imagen de ejemplo" />
           <div className="letrasEjemplo">
             <h4>Raices reales</h4>
