@@ -15,6 +15,8 @@ import RaicesReales from "./views/raicesReales/RaicesReales";
 import SistemasEcuaciones from "./views/sistemasEcuaciones/SistemasEcuaciones";
 import ProgramacionLineal from "./views/programacionLineal/ProgramacionLineal";
 import AjustesDeCurva from "./views/ajustesDeCurva/AjustesDeCurva";
+import Proyectos from "./views/proyectos/Proyectos";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -48,7 +50,9 @@ function App() {
           element={<ProgramacionLineal />}
         />
         <Route path="/ejemplos/ajustesdecurva" element={<AjustesDeCurva />} />
+        <Route path="/proyectos" element={<Proyectos />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
