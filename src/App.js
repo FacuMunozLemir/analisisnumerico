@@ -34,6 +34,7 @@ function App() {
             <SectionContacto />,
           ]}
         />
+        <Route path="/proyectos" element={<Proyectos />} />
         <Route path="/ejemplos" element={<Ejemplos />} />
         <Route
           path="/ejemplos/redondeotruncamiento"
@@ -50,7 +51,6 @@ function App() {
           element={<ProgramacionLineal />}
         />
         <Route path="/ejemplos/ajustesdecurva" element={<AjustesDeCurva />} />
-        <Route path="/proyectos" element={<Proyectos />} />
       </Routes>
       <Footer />
     </BrowserRouter>
