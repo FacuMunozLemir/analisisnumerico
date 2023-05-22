@@ -17,6 +17,8 @@ import ProgramacionLineal from "./views/programacionLineal/ProgramacionLineal";
 import AjustesDeCurva from "./views/ajustesDeCurva/AjustesDeCurva";
 import Proyectos from "./views/proyectos/Proyectos";
 import Footer from "./components/footer/Footer";
+import ProyectosCatedra from "./views/proyectosCatedra/ProyectosCatedra";
+import Desarrollos from "./views/desarrollos/Desarrollos";
 
 function App() {
   return (

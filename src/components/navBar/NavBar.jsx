@@ -40,12 +40,9 @@ function NavBar() {
             <Link to={"/ejemplos"} onClick={handlerNav}>
               Ejemplos
             </Link>
-            {/* <Link to={"/"} onClick={handlerNav}>
-              Biblioteca
-            </Link> */}
-            <a href="/proyectos" onClick={handlerNav}>
+            <Link to={"/proyectos"} onClick={handlerNav}>
               Proyectos
-            </a>
+            </Link>
             <a href="/#contacto" onClick={handlerNav}>
               Contacto
             </a>
