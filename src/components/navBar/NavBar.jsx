@@ -42,6 +42,9 @@ function NavBar() {
             {/* <Link to={"/"} onClick={handlerNav}>
               Biblioteca
             </Link> */}
+            <a href="/proyectos" onClick={handlerNav}>
+              Proyectos
+            </a>
             <a href="/#contacto" onClick={handlerNav}>
               Contacto
             </a>
@@ -50,9 +53,7 @@ function NavBar() {
         <div className="logo">
           <img src="./img/logoProfesorAizama.png" alt="logo amarre" />
         </div>
-        <div className="carrito">
-          <Link>{usuario}</Link>
-        </div>
+        <div className="carrito">{/* <Link>{usuario}</Link> */}</div>
       </div>
     </div>
   );

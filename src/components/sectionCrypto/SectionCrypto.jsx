@@ -19,15 +19,20 @@ function SectionCrypto() {
           decimal tiene un valor, y como un número en una posición decimal
           "lejana" puede significar una gran diferencia en nuestro bolsillo.
         </p>
-        <Link to={"/unidades"}>Ir a las unidades</Link>
+        <Link to={"/ejemplos"}>Ir a los ejemplos</Link>
       </div>
       <div className="ejemploDerecha">
         <h3>Ingresa un valor con decimales y mira la magia</h3>
         <img src="./img/bitcoin.png" alt="imagen bitcoin" />
         <Calculadora />
         <p>
+          Este ejemplo en particular es un ejemplo donde podremos apreciar uno
+          de los temas iniciales de la materia que son el <b>redondeo</b> y el
+          <b>truncamiento</b>.
+          <br />
           Aquí podemos ver como un número decimal muy pequeño, puede hacer una
-          GRAN diferencia dependiendo del <b>contexto</b>
+          GRAN diferencia dependiendo del <b>contexto</b> y del método de
+          aproximación que utilicemos.
         </p>
       </div>
     </div>
