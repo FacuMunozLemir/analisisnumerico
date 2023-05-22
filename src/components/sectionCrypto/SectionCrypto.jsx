@@ -26,8 +26,8 @@ function SectionCrypto() {
         <img src="./img/bitcoin.png" alt="imagen bitcoin" />
         <Calculadora />
         <p>
-          Este ejemplo en particular es un ejemplo donde podremos apreciar uno
-          de los temas iniciales de la materia que son el <b>redondeo</b> y el
+          En este ejemplo podemos apreciar los temas iniciales de la materia que
+          son el <b>redondeo</b> y el
           <b>truncamiento</b>.
           <br />
           Aquí podemos ver como un número decimal muy pequeño, puede hacer una

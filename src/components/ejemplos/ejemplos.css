@@ -1,5 +1,6 @@
 .ejemplosContainer {
   width: 100%;
+  margin-bottom: 4rem;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;

@@ -71,7 +71,13 @@ function SectionContacto() {
           <button type="submit" id="btnMail">
             Enviar
           </button>
-          {/* ...código existente... */}
+          <a
+            href="https://www.youtube.com/channel/UCXd3X_19weqRnp4RnWFS0Rg"
+            target="_blank"
+          >
+            {logoYouTube}
+            <p>YouTube</p>
+          </a>
         </div>
       </form>
     </div>
