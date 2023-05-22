@@ -23,7 +23,7 @@ function SectionContacto() {
         <div className="lineaInferior">
           <button>Enviar</button>
           <a
-            href="https://www.youtube.com/@victoraizama1068/videos"
+            href="https://www.youtube.com/channel/UCXd3X_19weqRnp4RnWFS0Rg"
             target="_blank"
           >
             {logoYouTube}

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { faBars, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import logo from "../../assets/img/logoProfesorAizama.png";
 import "./navbar.css";
 function NavBar() {
   const burguer = <FontAwesomeIcon icon={faBars} />;
@@ -51,7 +52,7 @@ function NavBar() {
           </div>
         </div>
         <div className="logo">
-          <img src="./img/logoProfesorAizama.png" alt="logo amarre" />
+          <img src={logo} alt="logo analisis" />
         </div>
         <div className="carrito">{/* <Link>{usuario}</Link> */}</div>
       </div>

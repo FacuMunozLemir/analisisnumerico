@@ -12,6 +12,9 @@ import Ejemplos from "./components/ejemplos/Ejemplos";
 import Truncamiento from "./views/truncamiento/Truncamiento";
 import Errores from "./views/errores/Errores";
 import RaicesReales from "./views/raicesReales/RaicesReales";
+import SistemasEcuaciones from "./views/sistemasEcuaciones/SistemasEcuaciones";
+import ProgramacionLineal from "./views/programacionLineal/ProgramacionLineal";
+import AjustesDeCurva from "./views/ajustesDeCurva/AjustesDeCurva";
 
 function App() {
   return (
@@ -36,6 +39,15 @@ function App() {
         />
         <Route path="/ejemplos/errores" element={<Errores />} />
         <Route path="/ejemplos/raicesreales" element={<RaicesReales />} />
+        <Route
+          path="/ejemplos/sistemasdeecuaciones"
+          element={<SistemasEcuaciones />}
+        />
+        <Route
+          path="/ejemplos/programacionlineal"
+          element={<ProgramacionLineal />}
+        />
+        <Route path="/ejemplos/ajustesdecurva" element={<AjustesDeCurva />} />
       </Routes>
     </BrowserRouter>
   );

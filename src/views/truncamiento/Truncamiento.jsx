@@ -7,7 +7,7 @@ function Truncamiento() {
     <div className="unidadesContainer">
       <h2>Truncamiento y Redondeo</h2>
       <div className="definicion unidadSegmento">
-        <h3>Definicion</h3>
+        <h3>Definición</h3>
         <p>
           En el análisis numérico, el truncamiento y el redondeo son dos
           técnicas utilizadas para reducir el número de cifras decimales en un

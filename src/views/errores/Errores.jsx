@@ -11,7 +11,7 @@ function Errores() {
     <div className="unidadesContainer">
       <h2>Errores: Absoluto, Relativo y Porcentual </h2>
       <div className="definicion unidadSegmento">
-        <h3>Definicion</h3>
+        <h3>Definición</h3>
         <p>
           <b>Error Absoluto:</b>
         </p>
@@ -121,7 +121,7 @@ function Errores() {
           Toca en el icono para ver un ejemplo desarrollado con su
           interpretación
         </p>
-        <a href={errores} target="_blank">
+        <a className="documentosAgregados" href={errores} target="_blank">
           {docs}
         </a>
         <br />

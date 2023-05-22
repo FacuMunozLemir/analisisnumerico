@@ -32,19 +32,25 @@ function Ejemplos() {
             <h4>Raices reales</h4>
           </div>
         </Link>
-        <Link className="ejemplo4 ejemploCard">
+        <Link
+          className="ejemplo4 ejemploCard"
+          to={"/ejemplos/sistemasdeecuaciones"}
+        >
           <img src="./img/ejemplo1redondeo.jpg" alt="imagen de ejemplo" />
           <div className="letrasEjemplo">
             <h4>Sistemas de ecuaciones</h4>
           </div>
         </Link>
-        <Link className="ejemplo5 ejemploCard">
+        <Link
+          className="ejemplo5 ejemploCard"
+          to={"/ejemplos/programacionlineal"}
+        >
           <img src="./img/ejemplo1redondeo.jpg" alt="imagen de ejemplo" />
           <div className="letrasEjemplo">
             <h4>Programacion lineal</h4>
           </div>
         </Link>
-        <Link className="ejemplo6 ejemploCard">
+        <Link className="ejemplo6 ejemploCard" to={"/ejemplos/ajustesdecurva"}>
           <img src="./img/ejemplo1redondeo.jpg" alt="imagen de ejemplo" />
           <div className="letrasEjemplo">
             <h4>Ajustes de Curva</h4>
