@@ -11,6 +11,7 @@ import SectionContacto from "./components/sectionContacto/SectionContacto";
 import Ejemplos from "./components/ejemplos/Ejemplos";
 import Truncamiento from "./views/truncamiento/Truncamiento";
 import Errores from "./views/errores/Errores";
+import RaicesReales from "./views/raicesReales/RaicesReales";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           element={<Truncamiento />}
         />
         <Route path="/ejemplos/errores" element={<Errores />} />
+        <Route path="/ejemplos/raicesreales" element={<RaicesReales />} />
       </Routes>
     </BrowserRouter>
   );
