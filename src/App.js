@@ -7,7 +7,6 @@ import NoticiasContainer from "./components/noticiasContainer/NoticiasContainer"
 import EnlacesContainer from "./components/enlacesContainer/enlacesContainer";
 import SectionContacto from "./components/sectionContacto/SectionContacto";
 
-// import EventosContainer from "./components/pageEventos/eventosContainer";
 import Ejemplos from "./components/ejemplos/Ejemplos";
 import Truncamiento from "./views/truncamiento/Truncamiento";
 import Errores from "./views/errores/Errores";
@@ -17,8 +16,6 @@ import ProgramacionLineal from "./views/programacionLineal/ProgramacionLineal";
 import AjustesDeCurva from "./views/ajustesDeCurva/AjustesDeCurva";
 import Proyectos from "./views/proyectos/Proyectos";
 import Footer from "./components/footer/Footer";
-import ProyectosCatedra from "./views/proyectosCatedra/ProyectosCatedra";
-import Desarrollos from "./views/desarrollos/Desarrollos";
 
 function App() {
   return (
